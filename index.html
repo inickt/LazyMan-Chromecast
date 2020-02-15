@@ -21,6 +21,7 @@
         loadRequestData.media.contentId = url.split('ha.m3u8?url=')[1];
       }
       loadRequestData.media.contentUrl = "https://lazyman-server.shit.city/api/key?url=" + loadRequestData.media.contentUrl;
+      loadRequestData.media.contentType = "application/vnd.apple.mpegurl";
       return loadRequestData;
     });
     cast.framework.CastReceiverContext.getInstance().start();
