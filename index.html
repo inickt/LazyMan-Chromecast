@@ -20,6 +20,7 @@
       if (url.indexOf('ha.m3u8') != -1) {
         loadRequestData.media.contentId = url.split('ha.m3u8?url=')[1];
       }
+      loadRequestData.media.contentUrl = "https://lazyman-server.shit.city/api/key?url=" + loadRequestData.media.contentUrl;
       return loadRequestData;
     });
     cast.framework.CastReceiverContext.getInstance().start();
